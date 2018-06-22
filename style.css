@@ -1,7 +1,33 @@
 body {
   font-family: sans-serif;
+  margin: 0;
 }
 
-/* flexbox */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #ddd;
+}
+
+nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+footer {
+  background: #ddd;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 0.6rem;
+  margin: 0;
+}
 
 /* media query */
