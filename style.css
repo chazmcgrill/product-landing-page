@@ -1,5 +1,6 @@
 body {
   font-family: "Nunito", sans-serif;
+  font-size: 22px;
   margin: 0;
 }
 
@@ -8,12 +9,17 @@ a {
   text-decoration: none;
 }
 
+iframe {
+  width: 100%;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   padding: 20px;
-  background: #8BC34A;
+  background: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -22,10 +28,17 @@ header {
 header h1 {
   margin: 0;
 }
+@media screen and (min-width: 480px) {
+  header {
+    flex-direction: row;
+  }
+}
 
 .section-hero {
-  margin-top: 100px;
-  height: 200px;
+  height: 100vh;
+  background: #43c6ac;
+  background: -webkit-linear-gradient(to bottom, #43c6ac, #f8ffae);
+  background: linear-gradient(to bottom, #43c6ac, #f8ffae);
 }
 
 nav ul {
@@ -45,5 +58,3 @@ footer p {
   font-size: 0.6rem;
   margin: 0;
 }
-
-/* media query */
