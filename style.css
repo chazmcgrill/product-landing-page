@@ -9,6 +9,27 @@ a {
   text-decoration: none;
 }
 
+form {
+  display: flex;
+}
+
+input {
+  background: none;
+  border: 3px solid white;
+  color: white;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type=email] {
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+input[type=submit] {
+  border: none;
+}
+
 iframe {
   width: 100%;
 }
@@ -20,34 +41,60 @@ header {
   flex-direction: column;
   padding: 20px;
   background: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
-header h1 {
+header nav ul {
+  margin: 0;
+  padding-left: 0;
+}
+header nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+h1, h2, p {
   margin: 0;
 }
 @media screen and (min-width: 480px) {
-  header {
+  h1, h2, p {
     flex-direction: row;
   }
 }
 
 .section-hero {
   height: 100vh;
-  background: #43c6ac;
-  background: -webkit-linear-gradient(to bottom, #43c6ac, #f8ffae);
-  background: linear-gradient(to bottom, #43c6ac, #f8ffae);
+  background: #00b09b;
+  background: -webkit-linear-gradient(to bottom, #00b09b, #8BC34A);
+  background: linear-gradient(to bottom, #00b09b, #8BC34A);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px;
 }
 
-nav ul {
-  margin: 0;
-  padding-left: 0;
+.about-box, .package-box {
+  padding: 20px 30px;
+  border: 1px solid black;
 }
-nav li {
-  display: inline-block;
-  list-style: none;
+.about-box h2, .package-box h2 {
+  text-align: center;
+}
+
+.section-video {
+  padding: 10px;
+}
+
+.section-reviews {
+  padding: 20px 40px;
+}
+
+.review-box {
+  margin-bottom: 20px;
 }
 
 footer {
@@ -55,6 +102,6 @@ footer {
   padding: 20px;
 }
 footer p {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
   margin: 0;
 }
