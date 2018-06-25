@@ -4,28 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Eko | Totally Renewable Energy</title>
+  <title>eeko | totally renewable energy</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
 </head>
 <body>
   <header id="header">
-    <img src="" alt="logo" id="header-img">
+    <a href="#home"><h1>eeko</h1></a>
     <nav id="nav-bar">
       <ul>
-        <li>nav1</li>
-        <li>nav2</li>
-        <li>nav3</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#packages">Packages</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- submit to https://www.freecodecamp.com/email-submit -->
-  <form action="" id="form">
-    <input type="email" name="email" id="email">
-    <input type="submit" value="Send" id="submit">
-  </form>
+  <section class="section-hero" id="home">
+    <!-- submit to https://www.freecodecamp.com/email-submit -->
+    <form action="" id="form">
+      <input type="email" name="email" id="email">
+      <input type="submit" value="Send" id="submit">
+    </form>
+  </section>
 
-  <section id="section-about">
+  <section class="section-about" id="about">
     <div class="about-box">
       <h2>Wind</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aliquam nulla harum obcaecati.</p>
@@ -40,15 +44,26 @@
     </div>
   </section>
 
-  <section id="section-video">
+  <section class="section-video">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/KEeH4EniM3E" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </section>
   
-  <section id="section-reviews">
+  <section class="section-reviews" id="reviews">
     <div class="review-box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, provident architecto. Voluptatem voluptatibus.</div>
     <div class="review-box">Consectetur adipisicing elit. Quasi, provident architecto. Voluptatem voluptatibus magni laudantium nihil.</div>
     <div class="review-box">alias esse doloribus tempora placeat reiciendis repellat dicta aut praesentium, quod dolore nostrum modi?</div>
     <div class="review-box">magni laudantium nihil, alias esse doloribus tempora placeat reiciendis repellat dicta aut praesentium.</div>
+  </section>
+
+  <section class="section-packages" id="packages">
+    <div class="package-box">
+      <h2>Pay Monthly</h2>
+      <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+    <div class="package-box">
+      <h2>Pre Payment</h2>
+      <p>Inventore voluptas, consequuntur</p>
+    </div>
   </section>
 
   <footer>
