@@ -1,38 +1,31 @@
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 22px;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
   color: white;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 h1, h2, p {
-  margin: 0;
-}
+  margin: 0; }
 
 form {
-  display: flex;
-}
+  display: flex; }
 
 input {
   background: none;
   border: 3px solid white;
   color: white;
   font-family: inherit;
-  font-size: inherit;
-}
+  font-size: inherit; }
 
 input[type=email] {
   padding: 10px 15px;
-  border-radius: 10px;
-}
+  border-radius: 10px; }
 
 input[type=submit] {
-  border: none;
-}
+  border: none; }
 
 header {
   display: flex;
@@ -44,21 +37,16 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-}
-header nav ul {
-  margin: 0;
-  padding-left: 0;
-}
-header nav li {
-  display: inline-block;
-  list-style: none;
-}
-@media screen and (min-width: 480px) {
-  header {
-    flex-direction: row;
-  }
-}
+  right: 0; }
+  header nav ul {
+    margin: 0;
+    padding-left: 0; }
+  header nav li {
+    display: inline-block;
+    list-style: none; }
+  @media screen and (min-width: 480px) {
+    header {
+      flex-direction: row; } }
 
 .section-hero {
   background: #00b09b;
@@ -71,38 +59,30 @@ header nav li {
   align-items: center;
   color: white;
   padding: 20px;
-  text-align: center;
-}
-.section-hero p {
-  margin-bottom: 10px;
-}
+  text-align: center; }
+  .section-hero p {
+    margin-bottom: 10px; }
 
 .about-box, .package-box {
   padding: 20px 30px;
   border: 1px solid black;
-  text-align: center;
-}
-.about-box p, .package-box p {
-  text-align: left;
-}
+  text-align: center; }
+  .about-box p, .package-box p {
+    text-align: left; }
 
 .about-box img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .section-video {
-  padding: 10px;
-}
+  padding: 10px; }
 
 .section-reviews {
-  padding: 20px 40px;
-}
+  padding: 20px 40px; }
 
 .review-box {
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 .section-signup {
   background: #00b09b;
@@ -113,14 +93,11 @@ header nav li {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 200px;
-}
+  height: 200px; }
 
 footer {
   background: #ddd;
-  padding: 20px;
-}
-footer p {
-  font-size: 0.9rem;
-  margin: 0;
-}
+  padding: 20px; }
+  footer p {
+    font-size: 0.9rem;
+    margin: 0; }

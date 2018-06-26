@@ -1,0 +1,32 @@
+{
+  "name": "product-landing-page",
+  "version": "1.0.0",
+  "description": "Fictional Product Landing Page",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chazmcgrill/product-landing-page.git"
+  },
+  "keywords": [
+    "html",
+    "sass",
+    "landing",
+    "page"
+  ],
+  "author": "Charlie Taylor <mail@charlietaylorcoder.com> (https://charlietaylorcoder.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chazmcgrill/product-landing-page/issues"
+  },
+  "homepage": "https://github.com/chazmcgrill/product-landing-page#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
