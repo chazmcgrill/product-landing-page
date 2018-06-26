@@ -7,6 +7,11 @@ $primary-text-color:   #212121
 $secondary-text-color: #757575
 $divider-color:        #BDBDBD
 
+@mixin gradient($color1, $color2)
+  background: $color1
+  background: -webkit-linear-gradient(to bottom, $color1, $color2)
+  background: linear-gradient(to bottom, $color1, $color2)
+
 body
   font-family: 'Nunito', sans-serif
   font-size: 22px
@@ -15,6 +20,9 @@ body
 a
   color: white
   text-decoration: none
+
+h1, h2, p
+  margin: 0
 
 form
   display: flex
@@ -33,9 +41,9 @@ input[type=email]
 input[type=submit]
   border: none
 
-iframe
-  width: 100%
-
+// iframe
+//   width: 100%
+//   height: auto
 
 header
   display: flex
@@ -57,29 +65,35 @@ header
       display: inline-block
       list-style: none
 
-h1, h2, p
-  margin: 0
-
   @media screen and (min-width: 480px)
     flex-direction: row
 
 .section-hero
+  @include gradient(#00b09b, $primary-color)
   height: 100vh
-  background: #00b09b
-  background: -webkit-linear-gradient(to bottom, #00b09b, $primary-color)
-  background: linear-gradient(to bottom, #00b09b, $primary-color)
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
   color: white
   padding: 20px
+  text-align: center
+
+  p
+    margin-bottom: 10px
 
 .about-box, .package-box
   padding: 20px 30px
   border: 1px solid black
-  h2
-    text-align: center
+  text-align: center
+  p
+    text-align: left
+
+.about-box
+  img
+    width: 200px
+    height: 200px
+    border-radius: 50%
 
 .section-video
   padding: 10px
@@ -89,6 +103,15 @@ h1, h2, p
 
 .review-box
   margin-bottom: 20px
+
+.section-signup
+  @include gradient(#00b09b, $primary-color)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding: 20px
+  height: 200px
 
 footer
   background: #ddd

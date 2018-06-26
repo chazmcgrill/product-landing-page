@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, p {
+  margin: 0;
+}
+
 form {
   display: flex;
 }
@@ -28,10 +32,6 @@ input[type=email] {
 
 input[type=submit] {
   border: none;
-}
-
-iframe {
-  width: 100%;
 }
 
 header {
@@ -54,35 +54,42 @@ header nav li {
   display: inline-block;
   list-style: none;
 }
-
-h1, h2, p {
-  margin: 0;
-}
 @media screen and (min-width: 480px) {
-  h1, h2, p {
+  header {
     flex-direction: row;
   }
 }
 
 .section-hero {
-  height: 100vh;
   background: #00b09b;
   background: -webkit-linear-gradient(to bottom, #00b09b, #8BC34A);
   background: linear-gradient(to bottom, #00b09b, #8BC34A);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   padding: 20px;
+  text-align: center;
+}
+.section-hero p {
+  margin-bottom: 10px;
 }
 
 .about-box, .package-box {
   padding: 20px 30px;
   border: 1px solid black;
-}
-.about-box h2, .package-box h2 {
   text-align: center;
+}
+.about-box p, .package-box p {
+  text-align: left;
+}
+
+.about-box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .section-video {
@@ -95,6 +102,18 @@ h1, h2, p {
 
 .review-box {
   margin-bottom: 20px;
+}
+
+.section-signup {
+  background: #00b09b;
+  background: -webkit-linear-gradient(to bottom, #00b09b, #8BC34A);
+  background: linear-gradient(to bottom, #00b09b, #8BC34A);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 200px;
 }
 
 footer {
