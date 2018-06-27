@@ -12,6 +12,9 @@ $divider-color:        #BDBDBD
   background: -webkit-linear-gradient(to bottom, $color1, $color2)
   background: linear-gradient(to bottom, $color1, $color2)
 
+*
+  // border: 1px solid black
+
 body
   font-family: 'Nunito', sans-serif
   font-size: 22px
@@ -84,10 +87,17 @@ header
 
 .about-box, .package-box
   padding: 20px 30px
-  border: 1px solid black
   text-align: center
   p
     text-align: left
+
+.section-about, .section-reviews, .section-packages
+  display: flex
+  flex-direction: column
+
+  @media screen and (min-width: 780px)
+    flex-direction: row
+    padding: 20px 50px
 
 .about-box
   img
@@ -98,11 +108,14 @@ header
 .section-video
   padding: 10px
 
-.section-reviews 
+.section-reviews
   padding: 20px 40px
 
 .review-box
   margin-bottom: 20px
+
+.section-packages
+  justify-content: space-around
 
 .section-signup
   @include gradient(#00b09b, $primary-color)
