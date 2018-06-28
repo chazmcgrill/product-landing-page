@@ -44,10 +44,6 @@ input[type=email]
 input[type=submit]
   border: none
 
-// iframe
-//   width: 100%
-//   height: auto
-
 header
   display: flex
   justify-content: space-between
@@ -105,8 +101,16 @@ header
     height: 200px
     border-radius: 50%
 
-.section-video
-  padding: 10px
+.section-video 
+  background: $primary-color-light
+  display: flex
+  justify-content: space-around
+  height: 300px
+  padding: 20px
+
+  iframe
+    max-width: 560px
+    width: 100%
 
 .section-reviews
   padding: 20px 40px
