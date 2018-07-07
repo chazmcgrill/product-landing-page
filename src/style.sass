@@ -12,8 +12,8 @@ $divider-color:        #BDBDBD
   background: -webkit-linear-gradient(to bottom, $color1, $color2)
   background: linear-gradient(to bottom, $color1, $color2)
 
-*
-  // border: 1px solid black
+// *
+//   border: 1px solid red
 
 body
   font-family: 'Nunito', sans-serif
@@ -91,7 +91,7 @@ header
   display: flex
   flex-direction: column
 
-  @media screen and (min-width: 780px)
+  @media screen and (min-width: 900px)
     flex-direction: row
     padding: 20px 50px
 
@@ -105,8 +105,7 @@ header
   background: $primary-color-light
   display: flex
   justify-content: space-around
-  height: 300px
-  padding: 20px
+  padding: 40px
 
   iframe
     max-width: 560px
@@ -116,8 +115,23 @@ header
   padding: 20px 40px
 
 .review-box
+  font-size: 1.1rem
+  padding: 10px
   margin-bottom: 20px
 
+.review-bar
+  display: flex
+  justify-content: space-between
+
+  p
+    color: black
+    font-size: 0.9rem
+
+  em, i
+    color: $primary-color-dark
+
+  @media screen and (min-width: 900px)
+    flex-direction: column
 .section-packages
   justify-content: space-around
 

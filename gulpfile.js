@@ -11,8 +11,8 @@ function defaultTask(done) {
   done();
 }
 
-gulp.task('copyHtml', function () {
-  gulp.src('./src/*.html')
+gulp.task('copyHtml', () => {
+  return gulp.src('./src/*.html')
     .pipe(gulp.dest('dist'));
 });
 
@@ -36,8 +36,8 @@ gulp.task('imageMin', () =>
 );
 
 gulp.task('watch', function () {
+  gulp.watch("src/*.html", gulp.series("copyHtml"));
   gulp.watch("src/js/*.js", gulp.series("imageMin"));
   gulp.watch("./src/img/*", gulp.series("imageMin"));
   gulp.watch('./src/*.sass', gulp.series('sass'));
-  gulp.watch("src/*.html", gulp.series("copyHtml"));
 });
