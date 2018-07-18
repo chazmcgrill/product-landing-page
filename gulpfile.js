@@ -1,7 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const imagemin = require("gulp-imagemin");
-const uglify = require("gulp-uglify-es");
+const uglify = require("gulp-uglify-es").default;
 const concat = require("gulp-concat");
 
 gulp.task('copyHtml', () => {
