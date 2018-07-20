@@ -20,12 +20,12 @@ function scrollTo(element, to, duration) {
   if (duration <= 0) {
     return;
   }
-  var difference = to - window.scrollY;
-  var perTick = difference / duration * 10;
+  const difference = to - window.scrollY;
+  const dest = difference / duration * 10;
 
-  if (perTick) {
-    setTimeout(function () {
-      window.scroll(0, window.scrollY + perTick);
+  if (dest) {
+    setTimeout(() => {
+      window.scroll(0, window.scrollY + dest);
       if (window.scrollY === to) {
         return;
       }
@@ -34,18 +34,17 @@ function scrollTo(element, to, duration) {
   }
 }
 
-// Function that calls scroll to function with the corresponding id;
+// Calls scrollTo function with the corresponding id
 function navClick(navId) {
   navId = navId ? navId.toLowerCase() : 'home';
   const section = document.getElementById(navId);
   scrollTo(document.body, section.offsetTop, 500);
 }
 
-// Click events for navigation
+// Click events for nav elements
 const nav = document.querySelectorAll('li');
-for (var i = 0; i < nav.length; i++) {
-  nav[i].addEventListener('click', function (event) {
-    console.log(event.target.innerText);
-    navClick(event.target.innerText);
+for (let i = 0; i < nav.length; i++) {
+  nav[i].addEventListener('click', (e) => {
+    navClick(e.target.innerText);
   }, false);
 }
