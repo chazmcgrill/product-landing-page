@@ -27,6 +27,10 @@ a
 h1, h2, p
   margin: 0
 
+hr
+  border: 1px solid $primary-color-light
+  margin: 0 40px
+
 form
   display: flex
 
@@ -40,6 +44,9 @@ input
 input[type=email]
   padding: 10px 15px
   border-radius: 10px
+
+  &::placeholder
+    color: white
 
 input[type=submit]
   border: none
@@ -64,12 +71,16 @@ header
       display: inline-block
       list-style: none
       color: white
+      padding-left: 5px
+  
+  @media screen and (min-width: 480px)
+    flex-direction: row
 
 .sticky
   position: fixed
   top: 0
   background: $primary-color
-  font-size: 0.9rem
+  font-size: 1rem
 
   @media screen and (min-width: 480px)
     flex-direction: row
@@ -119,7 +130,7 @@ header
     width: 100%
 
 .section-reviews
-  padding: 20px 40px
+  padding: 20px 40px 10px
 
 .review-box
   font-size: 1.1rem
@@ -142,6 +153,11 @@ header
 .section-packages
   justify-content: space-around
 
+.package-box
+  background: $primary-color-light
+  margin: 8px
+  border-radius: 8px
+
 .section-signup
   @include gradient(#00b09b, $primary-color)
   display: flex
@@ -151,9 +167,34 @@ header
   padding: 20px
   height: 200px
 
+  input
+    outline: none
+
+  input[type=submit]
+    cursor: pointer
+
 footer
   background: #ddd
   padding: 20px
-  p
-    font-size: 0.9rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+
+  ul
     margin: 0
+    padding: 0 0 10px 0
+
+  li
+    font-size: 1rem
+    list-style: none
+    display: inline-block
+    cursor: pointer
+    margin-right: 10px
+
+  p
+    font-size: 0.8rem
+    margin: 0
+
+  @media screen and (min-width: 480px)
+    flex-direction: row
